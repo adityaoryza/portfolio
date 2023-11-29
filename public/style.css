@@ -115,9 +115,6 @@ hr {
 .row {
   padding: 0;
 }
-#content {
-  position: relative;
-}
 .img-decoration {
   /* position: relative; */
   /* border: 1px solid black; */
@@ -235,3 +232,4 @@ button:hover .circle .icon.arrow {
 button:hover .button-text {
   color: #fff;
 }
+

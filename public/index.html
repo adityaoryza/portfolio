@@ -21,14 +21,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-  <script>
-    // Important for windows phone 8
-    if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
-      var msViewportStyle = document.createElement("style");
-      msViewportStyle.appendChild(document.createTextNode("@-ms-viewport{width:auto!important}"));
-      document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
-    }
-  </script>
   <!-- FONT -->
   <link href="http://fonts.cdnfonts.com/css/wintersans" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -43,8 +35,13 @@
 
 <body>
   <section id="tittle">
+    <!-- Scroll to Top Button -->
+<button id="scrollToTopBtn" title="Go to top">
+  <span class="icon arrow-up"></span>
+</button>
+
     <!-- NAVBAR -->
-    <div class="container-fluid">
+    <div class="container mt-0">
       <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light">
         <a class="navbar-brand" href="#home">Aditya</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-adit"
@@ -66,161 +63,181 @@
         </div>
       </nav>
     </div>
-    <!-- tittle -->
-    <div id="home" class="container-fluid">
+
+    <div id="home" class="container">
       <div class="row">
         <div class="col-lg-6 ">
           <div class="text-intro">
             <h1 class="name-text">Im Aditya</h1>
             <h2 class="desc-text">
-              Informatic Engginering Student at the University of Ahmad Dahlan
+              Passionate software engineer embracing challenges, mastering tech intricacies, and open for insightful
+              discussions on development
             </h2>
           </div>
         </div>
         <!-- AVATAR-IMAGE -->
         <div class="col-lg-6 ">
           <div class="img-intro">
-            <img class="self-img" src="../images/img-1.png" />
+            <img class="self-img img-fluid" src="../images/img-1.png" />
           </div>
         </div>
       </div>
-    </div>
     </div>
   </section>
+  
   <!-- content -->
-  <section id="content">
-    <div class="container-fluid">
-      <div class="row">
-        <!-- SHORT DESC MYSELF -->
-        <div class="col-lg-12">
-          <div class="box-shadow">
-            <div id="about" class="content-1">  
-              <img class="AVA-IMG" src="https://avatars.githubusercontent.com/u/61370748?v=4" alt="myslef-img" />
-              <h2 class="hello-text">Hello.</h2>
-              <p class="text-1">
-                undergraduate student at Universitas Ahmad Dahlan, currently focusing on backend development and
-                working with Node.js,
-                Express.js, and MongoDB. I also have experience in front-end development using Bootstrap. As a
-                developer, I possess strong
-                problem-solving and analytical skills, and I am able to communicate effectively and work well in a team
-                environment.
-              </p>
-            </div>
-            <!-- <hr> -->
-          </div>
+  <section id="content mb-10">
+    <div class="container-xxl">
+      <!-- SHORT DESC MYSELF -->
+      <div class="box-shadow">
+        <div id="about" class="content-1">
+          <img class="AVA-IMG" src="https://avatars.githubusercontent.com/u/61370748?v=4" alt="myslef-img" />
+          <h2 class="hello-text h2">Hello.</h2>
+          <p class="text-1 text-sm text-center">
+            Aspiring to be a software engineer, my current emphasis is on backend development, with in-depth work
+            involving Node.js, Express.js, and MongoDB. Simultaneously, I am actively learning React for frontend
+            development. Drawing upon my problem-solving and analytical skills, I prioritize effective communication
+            and thrive in a collaborative team environment. My overarching goal is to design and contribute to
+            large-scale applications, leveraging a combination of technical expertise and creative insight.
+          </p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- content -->
+  <section class="mb-5" id="content">
+    <div class="container-xxl">
+      <div class="row">
+
         <!-- Design Skill -->
-        <div class="col-lg-12 ">
-          <div class="box-shadow">
+        <div class="col-lg-12 mb-5">
+          <div class="box-shadow d-flex flex-column h-100">
             <div id="work" class="content-1">
-              <h2 class="skills-text">My Skills.</h2>
+              <h2 class="skills-text h2">My Skills.</h2>
               <div class="skill-row">
-                <img class="graphic-design" src="../../images/img-2.png" alt="graphic-design-img" />
+                <img class="graphic-design skill-image img-fluid" src="../../images/img-2.png"
+                  alt="graphic-design-img" />
                 <h3>Graphic Design</h3>
                 <p class="text-1">
-                  I started learning to design when i was 13 years old because i liked to design something with my
-                  creativity.
-                  I gained a wealth of experience designing things along with my trials and erors.
+                  Began designing at 13, driven by a passion for creative expression. Accumulated valuable experience
+                  through trial and error, crafting with my unique touch.
                 </p>
-                <a href="https://www.instagram.com/adityaoryza_" target="_blank">
-                  <button class="learn-more">
-                    <span class="circle" aria-hidden="true">
-                      <span class="icon arrow"></span>
-                    </span>
-                    <span class="button-text">Learn More</span>
-                  </button>
-                </a>
-                <!-- <hr> -->
               </div>
+            </div>
+            <div class="text-center">
+              <a href="https://www.instagram.com/adityaoryza_" target="_blank">
+                <button class="learn-more">
+                  <span class="circle" aria-hidden="true">
+                    <span class="icon arrow"></span>
+                  </span>
+                  <span class="button-text">Learn More</span>
+                </button>
+              </a>
             </div>
           </div>
         </div>
-        <!-- VIDEO EDIT SKILS -->
-        <div class="col-lg-12">
-          <div class="box-shadow">
+
+        <!-- VIDEO EDIT SKILLS -->
+        <div class="col-lg-12 mb-5">
+          <div class="box-shadow d-flex flex-column h-100">
             <div class="content-1">
               <div class="skill-row">
-                <img class="graphic-design" src="../images/img-3.png" alt="graphic-design-img" />
+                <img class="graphic-design skill-image img-fluid" src="../images/img-3.png"
+                  alt="graphic-design-img" />
                 <h3>Video Editing</h3>
                 <p class="text-1">
-                  I also studied video editing along with graphic design because
-                  I have a very high curiosity about this digital art.
+                  Explored video editing alongside graphic design fueled by a profound curiosity for the world of
+                  digital art.
                 </p>
-                <a href="https://www.instagram.com/adityaoryza_" target="_blank">
-                  <button class="learn-more">
-                    <span class="circle" aria-hidden="true">
-                      <span class="icon arrow"></span>
-                    </span>
-                    <span class="button-text">Learn More</span>
-                  </button>
-                </a>
               </div>
+            </div>
+            <div class="text-center ">
+              <a href="https://www.instagram.com/adityaoryza_" target="_blank">
+                <button class="learn-more">
+                  <span class="circle" aria-hidden="true">
+                    <span class="icon arrow"></span>
+                  </span>
+                  <span class="button-text">Learn More</span>
+                </button>
+              </a>
             </div>
           </div>
         </div>
+
         <!-- WEB DEVELOPMENT -->
-        <div class="col-lg-12">
-          <div class="box-shadow">
+        <div class="col-lg-12 mb-5">
+          <div class="box-shadow d-flex flex-column h-100">
             <div class="content-1">
               <div class="skill-row">
-                <img class="graphic-design" src="../images/img-7.png" alt="graphic-design-img" />
+                <img class="graphic-design skill-image img-fluid" src="../images/img-7.png"
+                  alt="graphic-design-img" />
                 <h3>Web Development</h3>
                 <p class="text-1">
-                  I am interested in the field of web development,
-                  I master some basic website programming such as html, css, javascript, bootstrap.
-                  And I'm also digging into node.js and some programming language related to back end.
+                  Passionate about web development, I've mastered foundational programming languages like HTML, CSS,
+                  JavaScript, and Bootstrap. Delving into Node.js and backend languages, I'm dedicated to software
+                  engineering, actively learning SQL, NoSQL, Express, and software design. Eager to tackle challenges,
+                  I'm open to discussions on all things tech and development!
                 </p>
-                <a href="https://github.com/adityaoryza" target="_blank">
-                  <button class="learn-more">
-                    <span class="circle" aria-hidden="true">
-                      <span class="icon arrow"></span>
-                    </span>
-                    <span class="button-text">Learn More</span>
-                  </button>
-                </a>
-                <!-- <hr> -->
               </div>
             </div>
-          </div>
-        </div>
-        <!-- SKILL SET DONE -->
-        <div class="col-lg-12">
-          <div class="box-shadow">
-            <div class="content-1">
-              <div class="skill-row">
-                <img id="contact" class="contactme-img" src="../images/img-4.png" alt="graphic-design-img" />
-                <h3>Get in touch</h3>
-                <p class="text-1">
-                  Im looking for any opportunities about design, video editing or even web development. Contact me.
-                </p>
-                <a href="mailto:oryza429@gmail.com">
-                  <button class="btn btn-outline-dark ">Contact Me</button>
-                </a>
-              </div>
+            <div class="text-center ">
+              <a href="https://github.com/adityaoryza" target="_blank">
+                <button class="learn-more">
+                  <span class="circle" aria-hidden="true">
+                    <span class="icon arrow"></span>
+                  </span>
+                  <span class="button-text">Learn More</span>
+                </button>
+              </a>
             </div>
           </div>
         </div>
 
       </div>
+    </div>
+  </section>
 
+  <!-- content -->
+  <section id="content">
+    <div class="container-xxl">
+      <!-- SKILL SET DONE -->
+      <div class="box-shadow">
+        <div class="content-1">
+          <div class="skill-row">
+            <img id="contact" class="contactme-img img-fluid" src="../images/img-4.png"
+              alt="graphic-design-img" />
+            <h3>Get in touch</h3>
+            <p class="text-1">
+              I am currently seeking opportunities in the fields of design, video editing, and web development. Feel
+              free to get in touch with me.
+            </p>
+            <a href="mailto:oryza429@gmail.com">
+              <button class="btn btn-outline-dark ">Contact Me</button>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   <!-- IMAGE DECORATION -->
   <div class="img-decoration container-fluid">
     <div class="row">
-      <div class="col-sm-12 ">
-        <img class="img-decor" src="../images/img-5.png" alt="cat-sitting-on-a-book-img">
+      <div class="col-sm-12">
+        <img class="img-decor img-fluid" src="../images/img-5.png" alt="cat-sitting-on-a-book-img">
       </div>
     </div>
   </div>
-  <!-- FOOTER -->
-  <section id="footer">
-    <div class="bottom-container sticky-bottom">
-      <a class="footer-link" href="https://www.linkedin.com/in/adityaoryza/" target="_blank">LinkedIn</a>
-      <a class="footer-link" href="https://github.com/adityaoryza" target="_blank">Github</a>
-      <p class="copyright">© Aditya Oryza.</p>
-    </div>
-  </section>
+  
+ <!-- FOOTER -->
+ <section id="footer">
+  <div class="bottom-container sticky-bottom">
+    <a class="footer-link" href="https://www.linkedin.com/in/adityaoryza/" target="_blank">LinkedIn</a>
+    <a class="footer-link" href="https://github.com/adityaoryza" target="_blank">Github</a>
+    <p class="copyright">© Aditya Oryza.</p>
+  </div>
+</section>
+  
 
 </body>
 
